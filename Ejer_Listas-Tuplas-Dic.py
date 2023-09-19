@@ -66,3 +66,23 @@ añadir(154852654)
 añadir(155963741)
 
 print(diccDos)
+
+#ESTRUCTURAS CONDICIONALES
+
+#EJERCICIO 1
+x = 10
+def sorteo():
+    opcion = int(input("\nIngrese un número del 1 al 10"))
+    if opcion < 1 or opcion > 10:
+        print("\nOpción incorrecta, ingrese nuevamente...")
+
+    elif opcion == 10:
+        try:
+            print("Usted ha ganado el sorteo!")
+        except Exception as descripcionError:
+            print("Hubo un ERROR al ingresar un número del 1 al 10...", descripcionError)
+    else:
+        opcion <10
+        print("El número ingresado es mayor a 10!")
+
+
